@@ -23,8 +23,19 @@ app.get('/video', (req, res) => {
   });
 });
 
-app.get('/', (req, res) => {
-  res.send('Random Video API is Running');
+const serveCyberInterface = async (res) => {
+  try {
+    let html = await fs.readFile(path.join(__dirname, 'views', 'index.html'), 'utf8');
+    html = html.replace(/\${PORT}/g, PORT);
+    res.send(html);
+  } catch (error) {
+    res.status(500).send('🚨 Interface loading failed');
+  }
+};
+
+// Routes
+app.get('/', async (req, res) => {
+  await serveCyberInterface(res);
 });
 
 app.listen(PORT, () => {

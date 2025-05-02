@@ -16,7 +16,7 @@ app.get('/video', (req, res) => {
       const json = JSON.parse(data);
       const videos = json.videos;
       const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-      res.json({ status: true, video: randomVideo });
+      res.json({ status: true, video: randomVideo, length: videos.length });
     } catch (e) {
       res.status(500).json({ status: false, message: 'Invalid JSON format' });
     }

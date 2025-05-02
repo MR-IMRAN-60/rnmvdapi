@@ -25,8 +25,7 @@ app.get('/video', (req, res) => {
 
 const serveCyberInterface = async (res) => {
   try {
-    let html = await fs.readFile(path.join(__dirname, 'views', 'index.html'), 'utf8');
-    html = html.replace(/\${PORT}/g, PORT);
+    let html = await fs.readFile(path.join(__dirname, 'public', 'index.html'), 'utf8');
     res.send(html);
   } catch (error) {
     res.status(500).send('🚨 Interface loading failed');

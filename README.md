@@ -1,6 +1,5 @@
-Here's a unique and visually appealing README.md for your Random Video API:
 
-```markdown
+
 # 🎥 Random Video API *"Cinema in a Click"*
 
 ![GitHub](https://img.shields.io/github/license/MR-IMRAN-60/rnmvdapi) 

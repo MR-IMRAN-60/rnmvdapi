@@ -23,19 +23,7 @@ app.get('/video', (req, res) => {
   });
 });
 
-const serveCyberInterface = async (res) => {
-  try {
-    let html = await fs.readFile(path.join(__dirname, 'public', 'index.html'), 'utf8');
-    res.send(html);
-  } catch (error) {
-    res.status(500).send('🚨 Interface loading failed');
-  }
-};
-
-// Routes
-app.get('/', async (req, res) => {
-  await serveCyberInterface(res);
-});
+app.use(express.static(__dirname + '/public'));
 
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);

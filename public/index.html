@@ -1,117 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMRAN VIDEO API</title>
-    <style>
-        :root {
-            --neon-green: #00ff88;
-            --neon-blue: #00ffee;
-            --bg-color: #000;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css">
+:root{
+--primary-color:#ffffff40;
+--white:#ffffff60;
 
-        body {
-            background: var(--bg-color);
-            color: var(--neon-green);
-            font-family: 'Courier New', monospace;
-            margin: 0;
-            min-height: 100vh;
-            display: grid;
-            place-items: center;
-            overflow: hidden;
-        }
 
-        .cyber-frame {
-            border: 3px solid var(--neon-green);
-            padding: 2rem;
-            position: relative;
-            animation: scanline 2s infinite;
-            box-shadow: 0 0 20px #00ff8888;
-        }
+}
 
-        @keyframes scanline {
-            0% { opacity: 0.95; }
-            50% { opacity: 0.85; }
-            100% { opacity: 0.95; }
-        }
+body{
+background:url(https://i.ibb.co.com/B2n3kBTr/blob-scatter-haikei.png);
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+display:flex;
+align-items:center;
+justify-content:center;
+height:100vh;
+font-family: "Montserrat", sans-serif 
+!important;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 
-        .ascii-header {
-            color: var(--neon-blue);
-            text-shadow: 0 0 10px var(--neon-blue);
-            white-space: pre;
-            margin: 0 auto;
-            text-align: center;
-        }
 
-        .status-panel {
-            background: #000;
-            border: 1px solid var(--neon-green);
-            padding: 1rem;
-            margin: 2rem 0;
-            position: relative;
-        }
+}
+/*contain box*/
+.box{
+width:300px;
+height:490px;
+border-radius:16px;
+border:1px solid var(--primary-color);
+backdrop-filter:blur(3px);
+transition:900ms;
+overflow:hidden;
+}
 
-        .status-item {
-            margin: 0.5rem 0;
-        }
+.box:hover{
+    transform:scale(1.09);
+}
 
-        .glow-effect {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: radial-gradient(circle, #00ff8822 0%, transparent 70%);
-            pointer-events: none;
-        }
-    </style>
+h1{text-align:center;
+color:white;
+font-weight:200;
+font-size:23px;
+height:8%;
+
+font-family:;
+text-align:center;
+box-shadow:0 0 8px 8px #ffffff40;
+background:linear-gradient(-90deg ,#ffffff13 30%,#ffffff47 30%,#ffffff25 30%);
+clip-path: polygon(18% 2%, 91% 0, 77% 81%, 21% 100%);
+}
+/*image*/
+img{
+border-radius:50%;
+margin:30px 80px 10px;
+outline:1px solid #ffffff40;
+outline-offset:4px;
+background:#ffffff32;
+backdrop-filter:;
+display:inline-block;
+
+
+}
+#i{ color:white;
+padding:7px;
+text-align:center;
+font-size:34px;
+width:50px;
+margin:7px;
+box-sizing:border-box;
+
+
+
+
+}
+
+</style>
+
+
+
+
+<title></title>
 </head>
 <body>
-    <div class="cyber-frame">
-        <div class="glow-effect"></div>
-        
-        <div class="ascii-header">
-  _____ __  __ _____            _   _            _____ _____ 
- |_   _|  \/  |  __ \     /\   | \ | |     /\   |  __ \_   _|
-   | | | \  / | |__) |   /  \  |  \| |    /  \  | |__) || |  
-   | | | |\/| |  _  /   / /\ \ | . ` |   / /\ \ |  ___/ | |  
-  _| |_| |  | | | \ \  / ____ \| |\  |  / ____ \| |    _| |_ 
- |_____|_|  |_|_|  \_\/_/    \_\_| \_| /_/    \_\_|   |_____|
-        </div>
+<div class="box">
+<img style="width:120px;height:120px;" src="https://i.ibb.co.com/pjSrsr1B/1000022637-removebg-preview.png">
+<h1 style="">Imran Ahmed</h1>
 
-        <div class="status-panel">
-    <div class="status-item">🟢 STATUS: <strong>OPERATIONAL</strong></div>
-    <div class="status-item">👨‍💻 AUTHOR: <span id="port">IMRAN</span> ✨</div>
-    <div class="status-item">⚡ VERSION: 2.1.0</div>
-    <div class="status-item">🎥 TOTAL VIDEOS: <span id="videoCount">Loading...</span></div>
+
+<div style="margin:10px 0px 0px 10px;"class="a">
+<a href="https://www.facebook.com/100075122837809">
+<i id="i" class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/imran.ahmed099">
+<i id="i" class="fa-brands fa-square-instagram"></i></a>
+<a href="https://github.com/MR-IMRAN-60/IMRAN-BOTV4">
+<i id="i" class="fa-brands fa-github"></i></a>
+<a href="https://m.me/Imran.Ahmed099">
+<i id="i" class="fa-brands fa-facebook-messenger"></i></a>
 </div>
 
-        <div class="endpoints">
-            <h3>🔌 ACTIVE ENDPOINTS:</h3>
-            <div class="endpoint-item">
-                <code>/video</code> - Random Video Metadata (GET)
-            </div>
-        </div>
-    </div>
 
-    <script>
-    // Dynamic video count update
-    fetch('/video')
-        .then(response => response.json())
-        .then(data => {
-            if (data && Array.isArray(data)) {
-                document.getElementById('videoCount').textContent = data.length;
-            } else if (data.video) {
-                document.getElementById('videoCount').textContent = '1 (Demo Mode)';
-            } else {
-                document.getElementById('videoCount').textContent = '0';
-            }
-        })
-        .catch(() => {
-            document.getElementById('videoCount').textContent = 'N/A';
-        });
-</script>
+<h3 style="font-weight:150;text-align:center;color:white;">
+I am a web designer and strive to present my work attractively and visually appealing.
 
+</h3>
+
+<button>
+<i class="fa-regular fa-message fa-bounce"></i>
+ 
+<a style="text-decoration:none;color:white;"href="https://wa.me/+8801689903267">
+Hire me</a>
+</button>
+<style>
+button{
+background:linear-gradient(90deg ,transparent,#ffffff60);
+color:white;
+margin:4% 23%;
+width:60%;
+height:10%;
+border:none;
+font-weight:300;
+box-shadow:0px 0px 7px 7px #ffffff20;
+border-radius:42px;
+font-size:20px;
+font-family: "Montserrat", sans-serif 
+!important;
+
+}
+.fa-regular fa-message fa-bounce{
+}
+a{padding-left:5px;
+}
+
+
+
+
+</style>
+
+
+
+</div>
 </body>
 </html>
